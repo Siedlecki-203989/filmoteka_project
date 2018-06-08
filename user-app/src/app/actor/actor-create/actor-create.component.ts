@@ -1,7 +1,7 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {ActorService} from "../actor.service";
-import {Actor} from "../Actor";
+import {Actor} from "../actor";
 import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
