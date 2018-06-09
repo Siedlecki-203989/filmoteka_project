@@ -1,4 +1,8 @@
-language: java
-jdk:
-  - oraclejdk8
+matrix:
+  include:
+- language: java
+- language: node_js
+node_js:
+  - "iojs"
+  - "7"
 
