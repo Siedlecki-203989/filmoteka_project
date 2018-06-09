@@ -14,7 +14,7 @@ import java.util.List;
 @Service
 public class UserService {
 
-    final Logger logger = LogManager.getLogger(ActorService.class);
+    final Logger logger = LogManager.getLogger(UserService.class);
 
     @Autowired
     UserRepository userRepository;
