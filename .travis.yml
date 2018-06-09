@@ -1,6 +1,8 @@
 matrix:
   include:
 - language: java
+sudo: false
+script: mvn clean verify
 - language: node_js
 node_js:
   - "iojs"
