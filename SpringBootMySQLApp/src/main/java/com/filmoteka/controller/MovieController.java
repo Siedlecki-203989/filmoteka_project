@@ -31,6 +31,7 @@ public class MovieController {
     public void deleteMovie(@PathVariable("id") Long id){
         movieService.deleteById(id);
     }
+
     @RequestMapping(value = "/movies", method = RequestMethod.POST)
     public ResponseEntity <Movie> createMovie (@RequestBody Movie movie){
         try {

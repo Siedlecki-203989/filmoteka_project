@@ -32,6 +32,7 @@ public class AwardController {
     public void deleteActor(@PathVariable("id") Long id) {
         awardService.deleteById(id);
     }
+
     @RequestMapping(value = "/awards", method = RequestMethod.POST)
     public ResponseEntity<Award> createActor(@RequestBody Award award) {
         try {

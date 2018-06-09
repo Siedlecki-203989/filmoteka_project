@@ -31,6 +31,7 @@ public class GenreController {
     public void deleteGenre(@PathVariable("id") Long id){
         genreService.deleteById(id);
     }
+
     @RequestMapping(value = "/genres", method = RequestMethod.POST)
     public ResponseEntity <Genre> createGenre (@RequestBody Genre genre){
         try {

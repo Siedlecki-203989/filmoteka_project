@@ -30,6 +30,7 @@ public class DistributorController {
     @RequestMapping(value = "/distributors/{id}" , method = RequestMethod.DELETE)
     public void deleteDistributor(@PathVariable("id") Long id){
         distributorService.deleteById(id);
+
     }
     @RequestMapping(value = "/distributors", method = RequestMethod.POST)
     public ResponseEntity <Distributor> createDistributor (@RequestBody Distributor distributor){
